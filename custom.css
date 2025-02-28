@@ -1,0 +1,8 @@
+body h1 {
+  color: rgb(
+    28,
+    157,
+    77
+  ) !important; /* This will ensure the color is applied */
+  font-size: 20px;
+}
