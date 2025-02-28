@@ -12,18 +12,8 @@ hr {
   border: 5px solid #e3e0df;
 }
 
-/* Custom styles for card */
-.card {
-  max-width: 300px; /* Adjust the width as needed */
-  margin-left: 0; /* Left align the card */
-  padding-bottom: 20px; /* Add padding to the bottom */
-  margin-top: 20px;
-  height: 670px;
-  background-color: bisque;
-}
-
-/* Custom styles for card image */
-.card-img-top {
+/* Custom styles for container card */
+.container-card-img {
   padding: 50px; /* Add padding to the image */
   width: 100%; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
@@ -33,6 +23,24 @@ hr {
   aspect-ratio: 1 / 1; /* Ensure the image is square */
   object-position: -0px -25px; /* Center the image within its container */
 }
+
+/* Custom styles for card */
+.card {
+  max-width: 100%; /* Adjust the width as needed */
+  margin-left: 0; /* Left align the card */
+  padding-bottom: 20px; /* Add padding to the bottom */
+  margin-top: 20px;
+  background-color: bisque;
+}
+
+/* Custom styles for project card images */
+.project-card-img {
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Set a maximum width */
+  object-fit: fit; /* Ensure the image covers the container */
+}
+
 p {
   font-weight: 900px;
   font-size: 15px;
@@ -43,6 +51,7 @@ p {
   padding: 10px;
   border-radius: 8px;
 }
+
 h5 {
   font-weight: 300px;
   font-size: 16px;
@@ -50,20 +59,23 @@ h5 {
   margin-top: 5px;
   font-family: EB Garamond;
 }
+
 h6 {
   display: relative;
-
   font-weight: bold;
   font-size: 25px;
   font-family: Libre Baskerville;
   text-align: center;
 }
+
 .occupation {
-  font-weight: 2000px;
+  font-weight: bold;
   font-size: 15px;
+  margin: 0 auto;
   padding: none;
   text-align: center;
 }
+
 body {
   background: radial-gradient(
     755px at 10.1% 95.3%,
@@ -72,9 +84,6 @@ body {
   );
 }
 
-.card-body {
-  margin-bottom: 50px;
-}
 .navbar {
   background-color: #ff6347; /* Set your desired background color */
 }
