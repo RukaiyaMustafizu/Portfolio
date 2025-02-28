@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -31,7 +30,63 @@
   </head>
 
   <body>
-    <h1>Hello world</h1>
-    <i class="fa-brands fa-instagram"></i>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid d-flex align-items-center">
+        <button
+          class="navbar-toggler order-1 me-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand order-2" href="#"></a>
+        <div class="collapse navbar-collapse order-3" id="navbarNav">
+          <ul class="navbar-nav d-flex align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <i class="fa-solid fa-house-user"></i> Home
+              </a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <span class="ms-2 fs-2">Designer Portfolio</span>
+            </li>
+          </ul>
+        </div>
+        <span class="ms-2 fs-2 order-4 d-lg-none text-center w-100"
+          >Designer Portfolio</span
+        >
+      </div>
+    </nav>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Designer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+      </li>
+      <hr />
+    </ul>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col">
+          <div class="card">
+            <img src="images/designer.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
