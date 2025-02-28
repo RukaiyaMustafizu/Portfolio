@@ -18,12 +18,63 @@ hr {
   margin-left: 0; /* Left align the card */
   padding-bottom: 20px; /* Add padding to the bottom */
   margin-top: 20px;
+  height: 670px;
+  background-color: bisque;
 }
 
 /* Custom styles for card image */
 .card-img-top {
+  padding: 50px; /* Add padding to the image */
   width: 100%; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
   max-width: 100%; /* Set a maximum width */
-  border-radius: 80%; /* Make the image circular */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image covers the container */
+  aspect-ratio: 1 / 1; /* Ensure the image is square */
+  object-position: -0px -25px; /* Center the image within its container */
+}
+p {
+  font-weight: 900px;
+  font-size: 15px;
+  font-family: EB Garamond;
+  text-align: center;
+  background-color: rgba(248, 186, 111, 0.803);
+  border-left: 5px solid rgb(246, 141, 44);
+  padding: 10px;
+  border-radius: 8px;
+}
+h5 {
+  font-weight: 300px;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 5px;
+  font-family: EB Garamond;
+}
+h6 {
+  display: relative;
+
+  font-weight: bold;
+  font-size: 25px;
+  font-family: Libre Baskerville;
+  text-align: center;
+}
+.occupation {
+  font-weight: 2000px;
+  font-size: 15px;
+  padding: none;
+  text-align: center;
+}
+body {
+  background: radial-gradient(
+    755px at 10.1% 95.3%,
+    rgb(242, 188, 141) 0%,
+    rgb(242, 159, 141) 100.2%
+  );
+}
+
+.card-body {
+  margin-bottom: 50px;
+}
+.navbar {
+  background-color: #ff6347; /* Set your desired background color */
 }
