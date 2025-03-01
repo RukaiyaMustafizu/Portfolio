@@ -7,6 +7,41 @@
     display: none;
   }
 
+  #about-page h1,
+  #about-page h2 {
+    font-size: 50px;
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+  }
+  #about-page h2 {
+    font-size: 28px;
+    font-family: Libre Baskerville;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0px;
+  }
+  .about-container {
+    display: block;
+    flex-direction: column-reverse; /* Align items in a row */
+    align-items: normal; /* Center items vertically */
+    height: auto;
+    max-width: 100%;
+    padding: 20px; /* Add padding */
+    margin: 40px 0; /* Add margin */
+    border: 1px solid #e3e0df;
+    border-radius: 5px;
+    color: rgb(59, 32, 13);
+  }
+  #about-page .about-container p {
+    font-size: 20px;
+    font-family: EB Garamond;
+    font-weight: 500;
+    text-align: none;
+    background-color: transparent; /* Remove background color */
+  }
+
   .project-card-2 {
     display: flex;
     flex-direction: row; /* Align items in a row */
@@ -75,7 +110,7 @@ hr {
   margin-left: 0; /* Left align the card */
   padding-bottom: 20px; /* Add padding to the bottom */
   margin-top: 20px;
-  background-color: bisque;
+  background-color: rgb(247, 196, 239);
 }
 
 /* Custom styles for project card images */
@@ -136,14 +171,21 @@ hr {
 .project-card-3 .card-body {
   flex: 1; /* Allow the body to take up remaining space */
 }
-
+.abt-page-b {
+  background: radial-gradient(
+    879px at 10.4% 22.3%,
+    rgb(255, 235, 238) 0%,
+    rgb(186, 190, 245) 93.6%
+  );
+}
 p {
   font-weight: 900px;
   font-size: 15px;
   font-family: EB Garamond;
   text-align: center;
-  background-color: rgba(248, 186, 111, 0.803);
-  border-left: 5px solid rgb(246, 141, 44);
+  background-color: rgba(87, 10, 54, 0.803);
+  border-left: 5px solid rgb(245, 241, 236);
+  color: whitesmoke;
   padding: 10px;
   border-radius: 8px;
 }
@@ -155,13 +197,18 @@ h5 {
   margin-top: 5px;
   font-family: EB Garamond;
 }
-
+.nav-item {
+  color: #dd7171;
+  font-size: 20px;
+  font-weight: bold;
+}
 h6 {
   display: relative;
   font-weight: bold;
   font-size: 25px;
   font-family: Libre Baskerville;
   text-align: center;
+  color: rgb(49, 159, 238);
 }
 
 .occupation {
@@ -170,13 +217,15 @@ h6 {
   margin: 0 auto;
   padding: none;
   text-align: center;
+  color: rgb(14, 7, 19);
 }
 
 body {
-  background: radial-gradient(
-    755px at 10.1% 95.3%,
-    rgb(242, 188, 141) 0%,
-    rgb(242, 159, 141) 100.2%
+  background: linear-gradient(
+    104.3deg,
+    rgb(253, 243, 243) 10.9%,
+    rgb(248, 231, 231) 27.8%,
+    rgb(160, 112, 161) 101.7%
   );
 }
 
@@ -184,6 +233,75 @@ body {
   margin-bottom: 50px;
 }
 
-.navbar {
-  background-color: #ff6347; /* Set your desired background color */
+/* Responsive styles for smaller screens */
+@media (max-width: 991px) {
+  #about-page h1 {
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  #about-page {
+    background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    border: none;
+    border-radius: 10px;
+  }
+  #about-page p {
+    font-size: 14px;
+    text-align: center;
+    color: rgb(28, 1, 13);
+    background: rgba(191, 147, 229, 0.396);
+    border-left: none;
+  }
+  #about-page h2,
+  #about-page h1 {
+    font-size: 20px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(206, 26, 206);
+  }
+
+  #about-page h1 {
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    color: rgb(81, 10, 109);
+  }
+  #about-page .project-card-2,
+  #about-page .project-card-3 {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  #about-page .project-card-2 .project-card-img,
+  #about-page .project-card-3 .project-card-img {
+    width: 100%; /* Make the image full width */
+    margin: 0 0 15px 0; /* Reset margins */
+  }
+
+  #about-page .project-card-2 .card-body,
+  #about-page .project-card-3 .card-body {
+    width: 100%; /* Make the body full width */
+  }
+}
+.home-btn {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #f0adda;
+  border-radius: 15px;
+  background-color: #270331;
+  cursor: pointer;
+  font-size: 20px;
+  color: rgb(203, 191, 214);
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: blueviolet;
+}
+.nav-link {
+  color: blueviolet;
 }
