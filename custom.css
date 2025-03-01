@@ -224,9 +224,8 @@ h6 {
 
 body {
   min-height: -100vh;
-  display: flex;
   align-content: center;
-  flex-direction: column;
+
   margin: 10px;
   margin-top: 0px;
   padding-top: 10px;
@@ -529,12 +528,3 @@ a {
 }
 
 /* Remove unnecessary margins and paddings */
-.container,
-.row,
-.col-lg-4,
-.col-lg-8,
-.card,
-.card-body {
-  margin: 0;
-  padding: 0;
-}
