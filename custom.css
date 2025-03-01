@@ -163,7 +163,7 @@ hr {
   height: auto;
   max-width: 100%;
   padding: 20px; /* Add padding */
-  margin: 40px 0; /* Add margin */
+  margin: 15px 0; /* Add margin */
   border: 1px solid #e3e0df;
   border-radius: 5px;
 }
@@ -223,6 +223,13 @@ h6 {
 }
 
 body {
+  min-height: -100vh;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  margin: 10px;
+  margin-top: 0px;
+  padding-top: 10px;
   background: linear-gradient(
     104.3deg,
     rgb(253, 243, 243) 10.9%,
@@ -279,6 +286,28 @@ body {
   font-family: "Times New Roman", Times, serif;
   color: rgba(47, 12, 47, 0.88);
   background-color: #cfd9df;
+}
+
+/* Custom styles for the video container */
+.video-container {
+  display: flex;
+  position: relative; /* Use relative positioning */
+
+  justify-content: center; /* Center the video horizontally */
+  margin-top: 20px; /* Add some margin to the top */
+  position: relative; /* Use relative positioning */
+  right: 0; /* Adjust the horizontal position */
+  bottom: 0; /* Adjust the vertical position */
+  left: -400px; /* Adjust the horizontal position */
+  top: -950px; /* Adjust the vertical position */
+}
+
+/* Custom styles for the responsive video */
+.responsive-video {
+  width: 300px; /* Set a fixed width for the video */
+  height: 300px; /* Set a fixed height for the video to make it square */
+  border-radius: 10px; /* Add some border radius if desired */
+  object-fit: cover; /* Ensure the video covers the container */
 }
 
 /* Responsive styles for smaller screens */
@@ -359,6 +388,14 @@ body {
 
   #contact-page p {
     font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .responsive-video {
+    max-width: 80%; /* Ensure the video takes up the full width on smaller screens */
+  }
+
+  .video-container {
+    display: none; /* Hide the video container on smaller screens */
   }
 }
 .home-btn {
@@ -466,4 +503,38 @@ a {
   font-family: "Times New Roman", Times, serif;
   color: rgba(47, 12, 47, 0.88);
   background-color: #cfd9df;
+}
+.sig {
+  font-family: fantasy;
+  font-size: 50px;
+  color: rgb(245, 21, 122);
+  position: relative;
+  top: 20px;
+  text-align: center;
+}
+.signature {
+  font-family: cursive;
+  font-size: 40px;
+  color: rgb(18, 9, 13);
+  background: none;
+  position: relative;
+  top: 80px;
+  text-align: center;
+  border: none;
+}
+
+/* Ensure the container takes up the remaining space */
+.container {
+  flex: 1;
+}
+
+/* Remove unnecessary margins and paddings */
+.container,
+.row,
+.col-lg-4,
+.col-lg-8,
+.card,
+.card-body {
+  margin: 0;
+  padding: 0;
 }
