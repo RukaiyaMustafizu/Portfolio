@@ -28,7 +28,8 @@
     <!-- Include custom CSS after Bootstrap CSS -->
     <link rel="stylesheet" href="custom.css" />
   </head>
-  <body class="abt-page-b">
+
+  <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid d-flex align-items-center">
         <button
@@ -58,14 +59,24 @@
         <span class="ms-2 fs-2 order-4 d-lg-none text-center w-100"
           >Designer Portfolio</span
         >
+        <div class="d-lg-none">
+          <a
+            href="https://www.linkedin.com/in/rukaiya-mustafizu-muhammad"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin" style="color: #b197fc"></i>
+          </a>
+        </div>
       </div>
     </nav>
     <ul class="nav nav-tabs">
       <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="index.html">Designer</a>
+        <a class="nav-link active" aria-current="page" href="index.html"
+          >Designer</a
+        >
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="about.html">About</a>
+        <a class="nav-link" href="about.html">About</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
@@ -75,48 +86,116 @@
       </li>
       <hr />
     </ul>
-    <div id="about-page">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <!-- Navbar content -->
-      </nav>
-      <div class="about-container">
-        <h1>Hi I am Rukaiya Mustafizu Muhammad</h1>
-        <h2>Front-end Developer based in the Netherlands</h2>
-        <p>
-          I am a front-end developer based in the Netherlands. I have been
-          working in the field of web development for the past 5 years. I have
-          experience in HTML, CSS, JavaScript, and React. I am passionate about
-          creating beautiful and functional websites. I am always looking for
-          new challenges and opportunities to grow as a developer.
-        </p>
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-        </ul>
-        <h2>Experience</h2>
-        <p>
-          I have worked on a variety of projects ranging from small websites to
-          large web applications. I have experience working with clients to
-          understand their needs and deliver high-quality solutions. I am
-          comfortable working in a team environment and have experience
-          collaborating with other developers and designers.
-        </p>
-        <h2>Contact</h2>
-        <p>
-          If you would like to get in touch with me, you can reach me at the
-          following email address:
-          <a href="mailto:rukaiyamustafizu@icloud.com"
-            >rukaiyamustafizu@icloud.com</a
-          >
-        </p>
-        <a href="index.html"
-          ><button class="home-btn">Back to homepage</button></a
-        >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12">
+          <div class="card">
+            <img
+              src="images/designer.jpg"
+              class="container-card-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <h6>Rukaiya Mustafizu Muhammad</h6>
+              <div class="occupation">Front-end developer 👩🏽‍💻| Chemist 🧪</div>
+              <h5 class="card-title">About me:</h5>
+              <p>
+                I am a Ghanaian front-end developer living in the Netherlands. I
+                have a passion for web design and love to create for web and
+                mobile devices. I am a self-taught developer and also
+                participated in powerfull bootcamps like sheCodes bootcamp. I am
+                always looking for new challenges and opportunities to grow as a
+                developer.
+              </p>
+            </div>
+          </div>
+          <div class="mt-3 text-center d-none d-lg-block">
+            <a
+              href="https://www.linkedin.com/in/rukaiya-mustafizu-muhammad"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin linkedin-icon"></i>
+            </a>
+          </div>
+        </div>
 
-        <!-- About page content -->
+        <div class="col-lg-8 col-md-12">
+          <div class="row">
+            <div class="col-12 mb-3">
+              <div class="card project-card-1">
+                <img
+                  src="images/my weather project.jpg"
+                  class="project-card-img"
+                  alt="my weather project"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-reset">
+                    <strong> Weather Project</strong>
+                  </h5>
+                  <p class="card-text">
+                    This was my first project I created with HTML, CSS, and
+                    JavaScript. I used the OpenWeather API to get the weather
+                    data. I also used the Geolocation API to get the user's
+                    location.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary text-reset"
+                      >@sheCodes Work shop</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mb-3">
+              <div class="card project-card-2">
+                <img
+                  src="images/my favourite snack.png"
+                  class="project-card-img"
+                  alt="my favourite snack"
+                />
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Favourite Hobby </strong></h5>
+                  <p class="card-text-1">
+                    This was my first project I created with HTML and CSS. Which
+                    I was able to customize the page's background by adding a
+                    theme ( light and dark mode) and also added a button to
+                    change the theme.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary text-reset"
+                      >@sheCodes workshop</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mb-3">
+              <div class="card project-card-3">
+                <img
+                  src="images/world clock.png"
+                  class="project-card-img rounded"
+                  alt="world clock"
+                />
+                <div class="card-body">
+                  <h5 class="card-title"><strong> World Clock</strong></h5>
+                  <p class="card-text">
+                    This is project I created with HTML, CSS, and JavaScript. I
+                    used the Date object to get the current time and display it
+                    on the page. I also used the setInterval method to update
+                    the time every second. I also used the localStorage API to
+                    save the user's time zone. I also used the Geolocation API
+                    to get the user's location.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary text-reset"
+                      >@sheCodes workshop</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

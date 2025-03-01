@@ -91,7 +91,13 @@
 hr {
   border: 5px solid #e3e0df;
 }
-
+.card-body {
+  color: rgb(30, 17, 17);
+  background-color: #eadded96;
+  border-radius: 30px;
+  margin: 20px;
+  font-weight: 900px;
+}
 /* Custom styles for container card */
 .container-card-img {
   padding: 50px; /* Add padding to the image */
@@ -233,6 +239,12 @@ body {
   margin-bottom: 50px;
 }
 
+/* Custom styles for the LinkedIn icon */
+.linkedin-icon {
+  color: #0077b5; /* LinkedIn blue color */
+  font-size: 10rem; /* Increase the size */
+}
+
 /* Responsive styles for smaller screens */
 @media (max-width: 991px) {
   #about-page h1 {
@@ -284,6 +296,10 @@ body {
   #about-page .project-card-3 .card-body {
     width: 100%; /* Make the body full width */
   }
+
+  .linkedin-icon {
+    display: none; /* Hide the LinkedIn icon on smaller screens */
+  }
 }
 .home-btn {
   display: block;
@@ -298,6 +314,11 @@ body {
   color: rgb(203, 191, 214);
   font-weight: bold;
 }
+.home-btn:hover {
+  background-color: #e7cedf;
+  color: #270331;
+  transition: all 0.3s ease-in-out;
+}
 a {
   text-decoration: none;
   color: blueviolet;
@@ -305,3 +326,5 @@ a {
 .nav-link {
   color: blueviolet;
 }
+
+/* Custom styles for container card */
