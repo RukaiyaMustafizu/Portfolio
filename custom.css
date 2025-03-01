@@ -244,6 +244,43 @@ body {
   left: 0; /* Adjust the horizontal position */
 }
 
+/* Custom styles for the contact page */
+.contact-container {
+  display: flex;
+  flex-direction: column; /* Align items in a column */
+  align-items: center; /* Center items horizontally */
+  margin-top: 20px; /* Add some margin to the top */
+  background-color: rgb(192, 160, 222);
+  padding: 20px;
+  margin: 100px;
+  border-radius: 20px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: row; /* Align items in a row */
+  justify-content: center; /* Center items horizontally */
+  margin-top: 20px; /* Add some margin to the top */
+  color: rgb(245, 241, 236);
+  background: none;
+  gap: 20px; /* Adjust the gap between links as needed */
+}
+
+#contact-page h1 {
+  font-size: 60px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: rgba(47, 12, 47, 0.88);
+}
+
+#contact-page p {
+  font-size: 20px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: rgba(47, 12, 47, 0.88);
+  background-color: #cfd9df;
+}
+
 /* Responsive styles for smaller screens */
 @media (max-width: 991px) {
   #about-page h1 {
@@ -283,6 +320,46 @@ body {
   .linkedin-icon {
     display: none; /* Hide the LinkedIn icon on smaller screens */
   }
+  .contact-links {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    justify-content: center; /* Center items horizontally */
+    margin-top: 20px; /* Add some margin to the top */
+    color: rgb(245, 241, 236);
+    background: none;
+    gap: 5px; /* Adjust the gap between links as needed */
+  }
+  #contact-page h1 {
+    font-size: 10px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    color: rgba(47, 12, 47, 0.88);
+  }
+  #contact-page p {
+    font-size: 10px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    color: rgba(47, 12, 47, 0.88);
+    background-color: #cfd9df;
+  }
+
+  .contact-container {
+    margin: 20px; /* Reduce margin for smaller screens */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .contact-links {
+    flex-direction: column; /* Stack links vertically on smaller screens */
+    gap: 10px; /* Adjust the gap between links */
+  }
+
+  #contact-page h1 {
+    font-size: 30px; /* Adjust font size for smaller screens */
+  }
+
+  #contact-page p {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
 }
 .home-btn {
   display: block;
@@ -304,7 +381,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: blueviolet;
+  color: rgb(238, 6, 184);
 }
 .nav-link {
   color: blueviolet;
@@ -356,4 +433,37 @@ a {
   margin-top: 20px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+}
+/* Custom styles for responsive alignment */
+.contact-container {
+  display: flex;
+  flex-direction: column; /* Align items in a column */
+  align-items: center; /* Center items horizontally */
+  margin-top: 20px; /* Add some margin to the top */
+  background-color: rgb(192, 160, 222);
+  padding: 20px;
+  margin: 100px;
+  border-radius: 20px;
+}
+.contact-links {
+  display: flex;
+  flex-direction: row; /* Align items in a row */
+  justify-content: center; /* Center items horizontally */
+  margin-top: 20px; /* Add some margin to the top */
+  color: rgb(245, 241, 236);
+  background: none;
+  gap: 20px; /* Adjust the gap between links as needed */
+}
+#contact-page h1 {
+  font-size: 60px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: rgba(47, 12, 47, 0.88);
+}
+#contact-page p {
+  font-size: 20px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: rgba(47, 12, 47, 0.88);
+  background-color: #cfd9df;
 }
